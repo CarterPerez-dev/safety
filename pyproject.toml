@@ -34,20 +34,19 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = [
   "Authlib>=1.2.0",
-  "Click>=8.0.2",
+  "Click==8.2.1",
   "dparse>=0.6.4",
-  "filelock~=3.16.1",
+  "filelock",
   "jinja2>=3.1.0",
-  "marshmallow>=3.15.0", # TODO: To be removed
+  "marshmallow>=3.15.0",
   "packaging>=21.0",
-  "psutil~=6.1.0",
-  "pydantic>=2.6.0,<2.10.0",
-  "requests", # TODO: To be replaced by httpx or aiohttp
+  "psutil==7.0.0",
+  "pydantic==2.11.7",
+  "requests",
   "httpx",
   "tenacity",
   "ruamel.yaml>=0.17.21",
   "safety-schemas==0.0.14",
-  # TODO: To be removed after migrate away from pkg_resources
   "setuptools>=65.5.1",
   "typer>=0.16.0",
   "typing-extensions>=4.7.1",
@@ -145,20 +144,19 @@ detached = true
 # with multiple versions of the dependencies.
 dependencies = [
   "Authlib>=1.2.0",
-  "Click>=8.0.2", # Typer works with >=8.0.0,<8.2.0
+  "Click>=8.0.2",
   "dparse>=0.6.4",
-  "filelock~=3.16.1",
+  "filelock",
   "jinja2>=3.1.0",
-  "marshmallow>=3.15.0", # TODO: To be removed
+  "marshmallow>=3.15.0",
   "packaging>=21.0",
-  "psutil~=6.1.0",
-  "pydantic>=2.6.0",
-  "requests", # TODO: To be replaced by httpx or aiohttp
+  "psutil==7.0.0",
+  "pydantic==2.11.7",
+  "requests",
   "httpx",
   "tenacity",
   "ruamel.yaml>=0.17.21",
   "safety-schemas==0.0.14",
-  # TODO: To be removed after migrate away from pkg_resources
   "setuptools>=65.5.1",
   "typer>=0.12.1",
   "typing-extensions>=4.7.1",
