@@ -41,7 +41,7 @@ dependencies = [
   "marshmallow>=3.15.0",
   "packaging>=21.0",
   "psutil==7.0.0",
-  "pydantic==2.11.7",
+  "pydantic",
   "requests",
   "httpx",
   "tenacity",
@@ -151,12 +151,12 @@ dependencies = [
   "marshmallow>=3.15.0",
   "packaging>=21.0",
   "psutil==7.0.0",
-  "pydantic==2.11.7",
+  "pydantic",
   "requests",
   "httpx",
   "tenacity",
   "ruamel.yaml>=0.17.21",
-  "safety-schemas==0.0.14",
+  "safety-schemas",
   "setuptools>=65.5.1",
   "typer>=0.12.1",
   "typing-extensions>=4.7.1",
@@ -192,7 +192,7 @@ binary-dist = "python --version && python -m PyInstaller safety.spec {args}"
 # minimal and stable targets are constrained
 # TODO: Once we don't have upper constraints, we can remove this
 name."^py[0-9.]+$|^py[0-9.]+-(.*-minimal|.*-stable)$".dependencies = [
-  "pydantic>=2.6.0,<2.10.0",
+  "pydantic>=2.6.0,<2.11.7",
 ]
 matrix.targets.dependencies = [
     # { value = "pydantic==2.6.0", if = ["pydantic-minimal"] },
