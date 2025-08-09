@@ -197,7 +197,7 @@ name."^py[0-9.]+$|^py[0-9.]+-(.*-minimal|.*-stable)$".dependencies = [
 matrix.targets.dependencies = [
     # { value = "pydantic==2.6.0", if = ["pydantic-minimal"] },
     { value = "pydantic~=2.9.0", if = ["pydantic-stable"] },
-    { value = "pydantic~=2.10", if = ["pydantic-2_10"] },
+    { value = "pydantic~=2.11.7", if = ["pydantic-2_10"] },
     { value = "pydantic~=2.11", if = ["pydantic-latest"] },
     
     { value = "typer==0.16.0", if = ["typer-minimal"] },
